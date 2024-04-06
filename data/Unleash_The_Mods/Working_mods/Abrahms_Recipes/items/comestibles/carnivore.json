@@ -12,7 +12,7 @@
     "spoils_in": "48 hours",
     "flags": [ "SMOKABLE", "RAW", "NUTRIENT_OVERRIDE" ],
     "smoking_result": "meatstick",
-    "vitamins": [ [ "vitA", 0 ], [ "vitC", 0 ], [ "calcium", 9 ], [ "iron", 36 ], [ "vitB", 68 ] ],
+    "vitamins": [ [ "vitC", 0 ], [ "calcium", 9 ], [ "iron", 36 ] ],
     "calories": 1507
   },
   {
@@ -27,7 +27,7 @@
     "price": "50 cent",
     "spoils_in": "48 hours",
     "flags": [ "RAW", "NUTRIENT_OVERRIDE" ],
-    "vitamins": [ [ "vitA", 0 ], [ "vitC", 0 ], [ "calcium", 1 ], [ "iron", 3 ], [ "vitB", 7 ] ],
+    "vitamins": [ [ "vitC", 0 ], [ "calcium", 1 ], [ "iron", 3 ] ],
     "calories": 150
   },
   {

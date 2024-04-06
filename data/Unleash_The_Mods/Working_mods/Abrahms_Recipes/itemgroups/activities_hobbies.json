@@ -77,7 +77,7 @@
         [ "dive_bag", 5 ],
         [ "diving_watch", 10 ],
         [ "rebreather", 3 ],
-        [ "rebreather_filter", 3 ],
+        [ "rebreather_cartridge_o2", 3 ],
         [ "glowstick", 60 ],
         [ "handflare", 40 ],
         [ "elbow_pads", 40 ],
