@@ -1,7 +1,7 @@
 [
   {
     "id": "armor_alloyplate",
-    "copy-from": "armor_lightplate",
+    "copy-from": "armor_mc_lightplate",
     "type": "ARMOR",
     "name": { "str": "superalloy plate armor" },
     "description": "A suit of Gothic plate armor. Handmade from superalloy plates, for better protection at lower weight.",
@@ -13,7 +13,7 @@
   },
   {
     "id": "survivor_lightplate",
-    "copy-from": "armor_lightplate",
+    "copy-from": "armor_mc_lightplate",
     "type": "ARMOR",
     "name": { "str": "survivor plate armor" },
     "description": "A suit of Gothic plate armor, reinforced with kevlar at the joints for better protection.",
