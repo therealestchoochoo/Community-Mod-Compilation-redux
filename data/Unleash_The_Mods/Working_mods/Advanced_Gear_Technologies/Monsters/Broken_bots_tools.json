@@ -61,7 +61,7 @@
     "price": 1000,
     "material": [ "steel", "plastic" ],
     "weight": "1023850 g",
-    "volume": "1100 L",
+    "volume": "990 L",
     "melee_damage": { "bash": 20 },
     "to_hit": -3,
     "use_action": {
