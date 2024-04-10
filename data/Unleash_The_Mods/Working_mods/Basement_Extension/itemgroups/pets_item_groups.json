@@ -34,30 +34,33 @@
   {
     "id": "pet_food",
     "type": "item_group",
-    "items": [
-      [ "protein_powder", 40 ],
-      [ "acorns", 40 ],
-      [ "hickory_nut", 40 ],
-      [ "water_clean", 90 ],
-      [ "dogfood", 40 ],
-      [ "catfood", 40 ],
-      [ "fried_seeds", 40 ],
-      [ "spoon", 20 ],
-      [ "ceramic_bowl", 40 ],
-      [ "cornmeal", 40 ],
-      [ "powder_eggs", 40 ],
-      [ "granola", 10 ],
-      [ "dry_meat", 20 ],
-      [ "dry_fish", 20 ],
-      [ "dry_veggy", 20 ],
-      [ "dry_fruit", 20 ],
-      [ "salt", 40 ],
-      [ "irradiated_cabbage", 10 ],
-      [ "irradiated_lettuce", 10 ],
-      [ "irradiated_carrot", 10 ],
-      [ "jerky", 20 ],
-      [ "oatmeal", 40 ]
-    ]
+    "copy-from": "pet_food",
+    "extend": {
+      "items": [
+        [ "protein_powder", 40 ],
+        [ "acorns", 40 ],
+        [ "hickory_nut", 40 ],
+        [ "water_clean", 90 ],
+        [ "dogfood", 40 ],
+        [ "catfood", 40 ],
+        [ "fried_seeds", 40 ],
+        [ "spoon", 20 ],
+        [ "ceramic_bowl", 40 ],
+        [ "cornmeal", 40 ],
+        [ "powder_eggs", 40 ],
+        [ "granola", 10 ],
+        [ "dry_meat", 20 ],
+        [ "dry_fish", 20 ],
+        [ "dry_veggy", 20 ],
+        [ "dry_fruit", 20 ],
+        [ "salt", 40 ],
+        [ "irradiated_cabbage", 10 ],
+        [ "irradiated_lettuce", 10 ],
+        [ "irradiated_carrot", 10 ],
+        [ "jerky", 20 ],
+        [ "oatmeal", 40 ]
+      ]
+    }
   },
   {
     "id": "pet_medicine",
