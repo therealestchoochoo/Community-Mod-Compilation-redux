@@ -86,8 +86,8 @@
       }
     ],
     "flags": [ "OVERSIZE", "OUTER" ],
-    "use_action": "CAPTURE_MONSTER_ACT",
-    "properties": [ [ "monster_size_capacity", "MEDIUM" ] ],
+    "properties": { "creature_size_capacity": "MEDIUM" },
+    "use_action": [ "CAPTURE_MONSTER_ACT" ],
     "material_thickness": 4
   },
   {

@@ -1,0 +1,24 @@
+[
+  {
+    "id": "mutagen_SHOGGOTH",
+    "type": "vitamin",
+    "vit_type": "counter",
+    "name": { "str": "Shoggoth Mutagen" },
+    "excess": "mutagen_SHOGGOTH",
+    "min": 0,
+    "max": 2500,
+    "rate": "1 h",
+    "disease_excess": [ [ 100, 500 ], [ 501, 2199 ], [ 2200, 2500 ] ]
+  },
+  {
+    "id": "mutagen_MILK",
+    "type": "vitamin",
+    "vit_type": "counter",
+    "name": { "str": "Milk maid Mutagen" },
+    "excess": "mutagen_MILK",
+    "min": 0,
+    "max": 2500,
+    "rate": "1 h",
+    "disease_excess": [ [ 100, 500 ], [ 501, 2199 ], [ 2200, 2500 ] ]
+  }
+]

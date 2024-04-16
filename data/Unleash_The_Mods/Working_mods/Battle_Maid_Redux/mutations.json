@@ -63,7 +63,7 @@
     "prereqs": [ "SHOGGOTH_BUFF" ],
     "threshreq": [ "THRESH_SHOGGOTH" ],
     "category": [ "SHOGGOTH" ],
-    "passive_mods": { "dex_mod": 2, "str_mod": 4 }
+    "enchantments": [ { "values": [ { "value": "STRENGTH", "add": 4 }, { "value": "DEXTERITY", "add": 2 } ] } ]
   },
   {
     "id": "SHOGGOTH_BUFF",
@@ -76,7 +76,7 @@
     "threshreq": [ "THRESH_SHOGGOTH" ],
     "category": [ "SHOGGOTH" ],
     "changes_to": [ "SHOGGOTH_BUFF_OK" ],
-    "passive_mods": { "dex_mod": -4 }
+    "enchantments": [ { "values": [ { "value": "DEXTERITY", "add": -4 } ] } ]
   },
   {
     "type": "mutation",
@@ -115,7 +115,6 @@
     "points": -2,
     "visibility": 10,
     "ugliness": 10,
-    "consume_time_modifier": 1.1,
     "mixed_effect": true,
     "description": "Your twisted, crackling flesh roils with new vigor. External damage pales in comparison to the chaotic knitting and reknitting taking place just beneath the surface.\n\nGain +4 cut armor, reduced move cost, and improved healing",
     "purifiable": false,
@@ -127,10 +126,16 @@
         "cut": 4
       }
     ],
-    "movecost_modifier": 0.8,
-    "healing_awake": 1.0,
-    "healing_resting": 0.75,
-    "mending_modifier": 32.0
+    "enchantments": [
+      {
+        "values": [
+          { "value": "MENDING_MODIFIER", "multiply": 32 },
+          { "value": "REGEN_HP", "multiply": 1.0 },
+          { "value": "MOVE_COST", "multiply": -0.2 },
+          { "value": "REGEN_HP_AWAKE", "multiply": 0.75 }
+        ]
+      }
+    ]
   },
   {
     "id": "SHOGGOTH_BODY_NPC",
@@ -151,10 +156,16 @@
         "bash": 8
       }
     ],
-    "movecost_modifier": 0.8,
-    "healing_awake": 3.0,
-    "healing_resting": 2.25,
-    "mending_modifier": 100.0
+    "enchantments": [
+      {
+        "values": [
+          { "value": "MENDING_MODIFIER", "multiply": 100 },
+          { "value": "REGEN_HP", "multiply": 2.25 },
+          { "value": "MOVE_COST", "multiply": -0.2 },
+          { "value": "REGEN_HP_AWAKE", "multiply": 3.0 }
+        ]
+      }
+    ]
   },
   {
     "type": "mutation",
@@ -256,7 +267,7 @@
     "description": "Something feels off. Your brain itches, and you swear you can feel your bones twitching.",
     "visibility": 0,
     "ugliness": 0,
-    "category": [ "SHOGGOTH", "SHOGGOTH", "SHOGGOTH", "SHOGGOTH", "SHOGGOTH", "SHOGGOTH", "SHOGGOTH", "SHOGGOTH", "SHOGGOTH" ],
+    "category": [ "SHOGGOTH" ],
     "purifiable": false
   },
   {
@@ -267,9 +278,7 @@
     "description": "Master is a good person. They make me feel warm and fuzzy inside.",
     "visibility": 0,
     "ugliness": 0,
-    "mixed_effect": true,
-    "passive_mods": { "int_mod": -4, "per_mod": -2 },
-    "category": [ "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK", "MILK" ],
+    "category": [ "MILK" ],
     "purifiable": false
   },
   {
@@ -289,9 +298,8 @@
     "category": [ "MILK" ],
     "mixed_effect": true,
     "purifiable": true,
-    "passive_mods": { "dex_mod": -6 },
-    "encumbrance_always": [ [ "torso", 30 ] ],
-    "movecost_modifier": 1.25
+    "enchantments": [ { "values": [ { "value": "DEXTERITY", "add": -6 }, { "value": "MOVE_COST", "multiply": 1.25 } ] } ],
+    "encumbrance_always": [ [ "torso", 30 ] ]
   },
   {
     "id": "maid_milked",

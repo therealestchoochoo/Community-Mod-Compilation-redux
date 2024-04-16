@@ -12,8 +12,9 @@
     "id": "MILK",
     "type": "mutation_category",
     "name": "Milk Maid",
-    "threshold_mut": "THRESH_SHOGGOTH",
+    "threshold_mut": "THRESH_MILK",
     "mutagen_message": "You feel an urge to moo.",
-    "memorial_message": "Found greener pastures."
+    "memorial_message": "Found greener pastures.",
+    "vitamin": "mutagen_MILK"
   }
 ]
